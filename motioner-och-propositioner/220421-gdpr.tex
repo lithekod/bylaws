@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+%% Setup
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage[swedish]{babel}  
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{titlesec}
+
+\usepackage[normalem]{ulem}
+\setlength\parindent{0pt}
+
+\usepackage{framed}
+\newenvironment{quotationb}%
+{\begin{leftbar}}%
+{\end{leftbar}}
+
+\usepackage{listings}
+\lstset{literate=%
+{ö}{{\o}}1
+{ä}{{\ae}}1
+{æ}{{\ae}}1
+{å}{{\aa}}1
+{ø}{{\o}}1
+{Æ}{{\AE}}1
+{Å}{{\AA}}1
+{Ø}{{\O}}1
+}
+\lstset{extendedchars=\true}
+\lstset{inputencoding=ansinew}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+\newcommand{\thedate}{2022--04--21}
+
+\begin{document}
+
+\pagestyle{fancy}
+\lhead{\includegraphics[height=4em]{lithekod.png}}
+\rhead{Proposition\\Linköping \thedate\\\phantom{}}
+\pagenumbering{gobble}
+
+\hspace{20em}
+
+\section{Utkast: Ändring av stadgarna för att efterleva GDPR}
+
+\subsection{Bakgrund}
+
+Som förening är vi skyldiga att följa GDPR. Som presenterades på höstmötet 2021
+har det tillkommit styrelsen att protokollföringen inte nödvändigtvis är i
+enligtet med GDPR. På höstmötet bestämdes att styrelsen skulle presentera ett
+förslag på ändring till stadgarna som är i enlighet med GDPR.
+
+\subsection{Förslag}
+
+Ändra \S4.3 i stadgarna från
+
+\begin{quotationb}
+
+Styrelsemöten måste protokollföras och protokollen förfärdigas i minst två
+    exemplar, varav ett skall anslås på föreningens hemsida och ett skall
+    arkiveras. Protokoll måste justeras av ordföranden och sekreteraren.
+    Protokoll ska vara färdigställda inom två (2) veckor efter ett möte.
+
+\end{quotationb}
+
+till
+
+\begin{quotationb}
+
+Styrelsemöten måste protokollföras och protokollen \sout{förfärdigas i minst två
+    exemplar, varav ett skall} \underline{ska} anslås på föreningens hemsida
+    \sout{och ett skall arkiveras}. \underline{Protokollen för nuvarande
+    verksamhetsår ska finnas tillgängliga under hela verksamhetsåret.} Protokoll
+    måste justeras av ordföranden och sekreteraren. Protokoll ska vara
+    färdigställda inom två (2) veckor efter ett möte.
+
+\end{quotationb}
+
+
+\subsection{Yrkande}
+
+Styrelsen yrkar att stormötet antar ovan presenterade ändringar till stadgarna.
+
+\rule{\linewidth}{1pt}
+
+Styrelsen genom Gustav Sörnäs
+
+\end{document}
