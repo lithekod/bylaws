@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+%% Setup
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage[swedish]{babel}  
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{titlesec}
+
+\usepackage[normalem]{ulem}
+\setlength\parindent{0pt}
+
+\usepackage{framed}
+\newenvironment{quotationb}%
+{\begin{leftbar}}%
+{\end{leftbar}}
+
+\usepackage{listings}
+\lstset{literate=%
+{ö}{{\o}}1
+{ä}{{\ae}}1
+{æ}{{\ae}}1
+{å}{{\aa}}1
+{ø}{{\o}}1
+{Æ}{{\AE}}1
+{Å}{{\AA}}1
+{Ø}{{\O}}1
+}
+\lstset{extendedchars=\true}
+\lstset{inputencoding=ansinew}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+% Ändra gärna datumet här från \today till t.ex. "2022-02-29"
+\newcommand{\thedate}{\today}
+
+\begin{document}
+
+\pagestyle{fancy}
+\lhead{\includegraphics[height=4em]{lithekod.png}}
+\rhead{Motion\\Linköping \thedate\\\phantom{}}
+\pagenumbering{gobble}
+
+\hspace{20em}
+
+% Motionens titel, t.ex. "Ändring av stadgarna för att efterleva GDPR"
+\section{MOTIONENS NAMN}
+
+\subsection{Bakgrund}
+
+% Här skriver du bakgrunden till motionen, t.ex. "med anledning av ..."
+
+\subsection{Förslag}
+
+% Beskriv vad du vill att föreningen ska göra. Till exempel "ändra i stadgarna
+% paragraf xyz till följande: "blablabla".
+
+\subsection{Yrkande}
+
+% Sammanfatta ditt yrkande. Var väldigt tydligt med vad du vill att föreningen ska göra. Exempel: "Jag
+% yrkar att föreningen antar stadgeändringarna som presenteras ovan." Håll dig
+% gärna till en mening
+
+Jag yrkar
+
+\noindent\rule{\linewidth}{1pt}
+
+FÖRNAMN EFTERNAMN
+
+\end{document}
