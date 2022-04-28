@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+%% Setup
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage[swedish]{babel}  
+\usepackage[left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{titlesec}
+
+\usepackage{draftwatermark}
+\SetWatermarkScale{5}
+
+\usepackage[normalem]{ulem}
+\setlength\parindent{0pt}
+\setlength\parskip{0.5em}
+
+\usepackage{framed}
+\newenvironment{quotationb}%
+{\begin{leftbar}}%
+{\end{leftbar}}
+
+\usepackage{listings}
+\lstset{literate=%
+{ö}{{\o}}1
+{ä}{{\ae}}1
+{æ}{{\ae}}1
+{å}{{\aa}}1
+{ø}{{\o}}1
+{Æ}{{\AE}}1
+{Å}{{\AA}}1
+{Ø}{{\O}}1
+}
+\lstset{extendedchars=\true}
+\lstset{inputencoding=ansinew}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+% Ändra gärna datumet här från \today till t.ex. "2022-02-29"
+\newcommand{\thedate}{2022--04--28}
+
+\begin{document}
+
+\pagestyle{fancy}
+\lhead{\includegraphics[height=4em]{lithekod.png}}
+\rhead{Proposition\\Linköping \thedate\\\phantom{}}
+\pagenumbering{gobble}
+
+\hspace{20em}
+
+% Ta bort den här innan stormötet.
+\SetWatermarkText{}
+
+% Motionens titel, t.ex. "Ändring av stadgarna för att efterleva GDPR"
+\section{Införande av ändringshistorik i stadgarna}
+
+\subsection{Bakgrund}
+
+I nuläget finns ingen ändringshistorik över stadgarna. Med en ändringhistorik
+kan efterföljande styrelser och medlemmar se vilka ändringar som skett, när dom
+skett och hur diskussionen såg ut när ändringen skulle införas.
+
+Ett förslag på hur en ändringshistorik skulle se ut bifogas.
+
+\subsection{Förslag}
+
+% Beskriv vad du vill att föreningen ska göra. Till exempel "ändra i stadgarna
+% paragraf xyz till följande: "blablabla".
+
+Inför en ny underrubrik \S3.5.2 ''Ändringshistorik'' i stadgarna som lyder
+
+\begin{quotationb}
+
+Ändringar som görs i stadgarna ska noteras i en ändringshistorik i stadgarna.
+
+\end{quotationb}
+
+\subsection{Yrkande}
+
+% Sammanfatta ditt yrkande. Var väldigt tydligt med vad du vill att föreningen ska göra. Exempel: "Jag
+% yrkar att föreningen antar stadgeändringarna som presenteras ovan." Håll dig
+% gärna till en mening
+
+Styrelsen yrkar att stormötet antar ovan presenterade tillägg till stadgarna.
+
+\noindent\rule{\linewidth}{1pt}
+
+Styrelsen genom Gustav Sörnäs
+
+\end{document}
