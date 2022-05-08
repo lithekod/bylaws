@@ -13,6 +13,7 @@
 \usepackage[swedish]{babel}  
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
 \usepackage{lastpage}
+\usepackage{tabularx}
 
 \usepackage{listings}
 \lstset{literate=%
@@ -40,6 +41,15 @@
 \thispagestyle{empty}
 \pagebreak
 \tableofcontents
+\pagebreak
+
+\section*{Ändringshistorik}
+% X i en tabularx gör att kolumnen expanderar i sidled så mycket som möjligt.
+\begin{tabularx}{\textwidth}{X l l}
+    \bfseries Motion/proposition & \bfseries Diskuterad & \bfseries Införd \\\hline
+    \vspace{-0.6em} % Ä:et nedan gick in i linjen ovanför annars.
+    Införande av ändringshistorik i stadgarna & 2022--05--10 & 2022--05--YY \\
+\end{tabularx}
 \pagebreak
 
 \pagestyle{fancy}
